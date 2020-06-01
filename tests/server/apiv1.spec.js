@@ -1,4 +1,4 @@
-
+/*
 const requireHelper = require('./requireHelper');
 const apiv1 = requireHelper.require('routes/apiv1');
 const assert = require('chai').assert;
@@ -20,7 +20,7 @@ resMock.end = function() {
 sinon.spy(resMock, "status");
 sinon.spy(resMock, "send");
 
-/*
+
 describe('Get Weather', function() {
 
   it('with without zip code', function() {
