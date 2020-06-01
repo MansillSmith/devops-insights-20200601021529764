@@ -9,7 +9,7 @@ var request = REQUEST.defaults( {
 
 //var OPENWEATHERURL = "https://api.openweathermap.org/data/2.5/weather?appid=6b7b471967dd0851d0010cdecf28f829&units=imperial";
 //var OPENWEATHERURL = "api.openweathermap.org/data/2.5/weather?q={city name}&appid={your api key}";
-var OPENWEATHERURL = "api.openweathermap.org/data/2.5/weather?q=;
+var OPENWEATHERURL = "api.openweathermap.org/data/2.5/weather?q=";
 
 
 exports.getWeather = function(req, res) {
