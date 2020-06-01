@@ -21,6 +21,7 @@ exports.getWeather = function(req, res) {
 
 	//var aurl = OPENWEATHERURL + '&zip=' + zip + ',us';
 	var aurl = OPENWEATHERURL + zip + ',nz&appid=6b7b471967dd0851d0010cdecf28f829&units=metric';
+	console.log('1: ' + aurl);
 
 	request({
 		method: 'GET',
