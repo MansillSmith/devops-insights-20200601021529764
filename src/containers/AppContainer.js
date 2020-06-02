@@ -8,10 +8,10 @@ function AppContainer(props) {
     const [responseData, setResponseData] = useState('');
 
     const handleZipChange = async (zipValue) => {
-        console.log(`--------- fetchData called zip:${zipValue}`);
-        console.log(`api.openweathermap.org/data/2.5/weather?q=${zipValue},nz&appid=6b7b471967dd0851d0010cdecf28f829&units=metric`);
+        //console.log(`--------- fetchData called zip:${zipValue}`);
+        //console.log(`api.openweathermap.org/data/2.5/weather?q=${zipValue},nz&appid=6b7b471967dd0851d0010cdecf28f829&units=metric`);
         //const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?appid=6b7b471967dd0851d0010cdecf28f829&units=imperial&zip=${zipValue},us`)
-        const res = await fetch(`api.openweathermap.org/data/2.5/weather?q=${zipValue},nz&appid=6b7b471967dd0851d0010cdecf28f829&units=metric`)
+        const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?appid=6b7b471967dd0851d0010cdecf28f829&units=metric&q=${zipValue},nz`)
         const json = await res.json()
         //console.log(json);
         //console.log(json);
