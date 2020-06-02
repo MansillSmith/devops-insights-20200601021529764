@@ -3,13 +3,13 @@ import React from 'react';
 function ZipResponse(props) {
 
     if(props.responseData === null || props.responseData === '') {
-    	console.log("HERE1")
+    	console.log("HERE1");
         return null;
     }
 
     if(props.responseData.cod === '400' || props.responseData.cod === '404') {
         setTimeout(function() { props.clearResponse();}, 20000);
-        console.log("HERE2")
+        console.log("HERE2");
         return (
             <div className="col-sm-8">
                 <div className="text-danger">{ props.responseData.message }</div>
@@ -18,7 +18,7 @@ function ZipResponse(props) {
     }
 
     if(props.responseData.cod === 200) {
-    	console.log("HERE3")
+    	console.log("HERE3");
     	/*
         return (
             <div className="col-sm-8">
