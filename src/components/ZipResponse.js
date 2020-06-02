@@ -19,8 +19,8 @@ function ZipResponse(props) {
 
     if(props.responseData.cod === 200) {
     	console.log("HERE3")
+    	/*
         return (
-        	/*
             <div className="col-sm-8">
                 <table className="table table-info table-hover">
                     <tbody>
@@ -55,8 +55,10 @@ function ZipResponse(props) {
                     </tbody>
                 </table>
             </div>
-            */
-           <div className="col-sm-8">
+        )
+        */
+       return (
+            <div className="col-sm-8">
                 <table className="table table-info table-hover">
                     <tbody>
                         <tr>
