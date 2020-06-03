@@ -29,7 +29,7 @@ function AppContainer(props) {
                 <Zip onZipChange={handleZipChange} clearResponse={clearResponse}/>
                 <div className="col-sm-4"></div>
             </div>
-            <div className="row mt-4">
+            <div className="row mt-4" id="response">
                 <div className="col-sm-2"></div>
                 <ZipResponse responseData={responseData} clearResponse={clearResponse}/>
                 <div className="col-sm-2"></div>
