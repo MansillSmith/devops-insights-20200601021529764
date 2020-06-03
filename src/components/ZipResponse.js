@@ -56,7 +56,7 @@ function ZipResponse(props) {
 			      var map;
 			      function initMap() {
 			        map = new google.maps.Map(document.getElementById('map'), {
-			          center: {lat: {props.responseData.coord.lat}, lng: {props.responseData.coord.lon}},
+			          center: {lat: 175.28, lng: -37.78},
 			          zoom: 8
 			        });
 			      }
