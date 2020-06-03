@@ -53,12 +53,10 @@ function ZipResponse(props) {
                 <div id="map">
 	            </div>
 	            <script>
-			      var map;
-			      function initMap() {
-			        map = new google.maps.Map(document.getElementById('map'), {
-			          center: {lat: 175.28, lng: -37.78},
-			          zoom: 8
-			        });}
+			    	var map;
+			    	function initMap() {
+			        map = new google.maps.Map(document.getElementById('map'), {center: {lat: 175.28, lng: -37.78}, zoom: 8});
+			        }
 			    </script>
             </div>
         )
