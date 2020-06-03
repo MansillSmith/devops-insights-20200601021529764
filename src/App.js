@@ -11,8 +11,8 @@ function App() {
 	<AppContainer />
 	<div id="map"></div>
 	<script>
-function initMap(){
-var options = {
+function initMap()
+{var options = {
 zoom: 8,
 center:{lat:175.28,lng:-37.78}
 }
