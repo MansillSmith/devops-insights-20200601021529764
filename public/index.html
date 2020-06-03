@@ -32,7 +32,6 @@
     <div id="root"></div>
     <div id='map' style='width: 100%; height: 600px;'></div>
 	<script>
-		import fetch from 'isomorphic-unfetch'
 		mapboxgl.accessToken = 'pk.eyJ1IjoibWFuc2lsbHNtaXRod2Fpa2F0byIsImEiOiJja2F5dWo5cHkwZ2NzMnhwaTJmejQ4cGV0In0.mFF2Ye-BbHf63SpW5f8NOw';
 		var map = new mapboxgl.Map({
 			container: 'map',
@@ -44,6 +43,7 @@
 		map.on('click', addMarker);
 		
 		function addMarker(e){
+			import fetch from 'isomorphic-unfetch';
 			 // create a HTML element for each feature
 			  var el = document.createElement('div');
 			  el.className = 'marker';
