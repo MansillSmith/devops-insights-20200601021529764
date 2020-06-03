@@ -29,6 +29,17 @@ function AppContainer(props) {
                 <Zip onZipChange={handleZipChange} clearResponse={clearResponse}/>
                 <div className="col-sm-4"></div>
             </div>
+            <div id="map" style="height:400px;width:100%;"></div>
+			<script>
+				function initMap(){
+					var options = {
+						zoom:8,
+						center:{lat:175.27,lng:37.78}
+					}
+					var map = new google.maps.Map(document.getElementById('map'),options);
+				}
+			</script>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB54eVXdlUoy9t9GkcgUQsm7RujVuz8XIo&callback=initMap"></script>
             <div className="row mt-4">
                 <div className="col-sm-2"></div>
                 <ZipResponse responseData={responseData} clearResponse={clearResponse}/>

@@ -10,7 +10,6 @@ function App() {
 			<AppHeader />
 			<AppContainer />
 			<div id="map"></div>
-			<iframe src="map.html" title="Google Maps"></iframe>
 		</div>
 	);
 }
