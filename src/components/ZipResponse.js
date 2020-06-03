@@ -51,6 +51,17 @@ function ZipResponse(props) {
                     </tbody>
                 </table>
             </div>
+            <div id="map">
+            </div>
+            <script>
+		      var map;
+		      function initMap() {
+		        map = new google.maps.Map(document.getElementById('map'), {
+		          center: {lat: {props.responseData.coord.lat}, lng: {props.responseData.coord.lon}},
+		          zoom: 8
+		        });
+		      }
+		    </script>
         )
     }
     return null
