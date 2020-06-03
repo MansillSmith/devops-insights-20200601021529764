@@ -27,19 +27,18 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">
-    	<div id="map"></div>
-		<script>
-			function initMap(){
-				var options = {
-					zoom:8,
-					center:{lat:175.27,lng:37.78}
-				}
-				var map = new google.maps.Map(document.getElementById('map'),options);
+    <div id="root"></div>
+    <div id="map"></div>
+	<script>
+		function initMap(){
+			var options = {
+				zoom:8,
+				center:{lat:175.27,lng:37.78}
 			}
-		</script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB54eVXdlUoy9t9GkcgUQsm7RujVuz8XIo&callback=initMap"></script>
-    </div>
+			var map = new google.maps.Map(document.getElementById('map'),options);
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB54eVXdlUoy9t9GkcgUQsm7RujVuz8XIo&callback=initMap"></script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
