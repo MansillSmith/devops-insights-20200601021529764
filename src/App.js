@@ -13,7 +13,7 @@ function App() {
 			<script>
 				function initMap(){
 					var options = {
-						zoom: 8
+						zoom: 8,
 						center:{lat:175.28,lng:-37.78}
 					}
 					var map = new google.maps.Map(document.getElementById('map'),options);
