@@ -50,15 +50,15 @@ function ZipResponse(props) {
                         </tr>
                     </tbody>
                 </table>
-                <div id="map">
-	            </div>
-	            <script>
-			    	var map;
-			    	function initMap() {
-			        map = new google.maps.Map(document.getElementById('map'), {center: {lat: 175.28, lng: -37.78}, zoom: 8});
-			        }
-			    </script>
             </div>
+            <div id='map' style='width: 400px; height: 300px;'></div>
+			<script>
+				mapboxgl.accessToken = 'pk.eyJ1IjoibWFuc2lsbHNtaXRod2Fpa2F0byIsImEiOiJja2F5dWo5cHkwZ2NzMnhwaTJmejQ4cGV0In0.mFF2Ye-BbHf63SpW5f8NOw';
+				var map = new mapboxgl.Map({
+				container: 'map',
+				style: 'mapbox://styles/mapbox/streets-v11'
+				});
+			</script>
         )
     }
     return null
