@@ -11,12 +11,12 @@ function App() {
 	<AppContainer />
 	<div id="map"></div>
 	<script>
-		function initMap(){
-			var options = {
-				zoom: 8,
-				center:{lat:175.28,lng:-37.78}
-			}
-			var map = new google.maps.Map(document.getElementById('map'),options);  
+function initMap(){
+var options = {
+zoom: 8,
+center:{lat:175.28,lng:-37.78}
+}
+var map = new google.maps.Map(document.getElementById('map'),options);  
 		}
 	</script>
 	<script async defer
