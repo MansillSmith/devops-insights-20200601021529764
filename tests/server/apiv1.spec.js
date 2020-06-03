@@ -48,14 +48,6 @@ describe('Get Weather', function() {
     apiv1.__set__("request", request);
 
     apiv1.getWeather(reqMock, resMock);
-	/*
-	console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
-	console.log(resMock.status.lastCall.calledWith(400));
-	console.log('Unexpected response:' + resMock.status.lastCall.args);
-	console.log('space');
-	console.log(resMock.send.lastCall.calledWith('Failed to get the data'));
-	console.log('Unexpected response:' + resMock.send.lastCall.args);
-	console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');*/
     assert(resMock.status.lastCall.calledWith(400), 'Unexpected response:' + resMock.status.lastCall.args);
     assert(resMock.send.lastCall.calledWith('Failed to get the data'), 'Unexpected response:' + resMock.send.lastCall.args);
   });
