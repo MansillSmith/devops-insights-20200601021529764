@@ -40,20 +40,17 @@
 			zoom: 8
 		});
 		
-		function addMarker(pos){
+		map.on('click', addMarker);
+		
+		function addMarker(e){
 			 // create a HTML element for each feature
 			  var el = document.createElement('div');
 			  el.className = 'marker';
 			  
 			  // make a marker for each feature and add to the map
 			  new mapboxgl.Marker(el)
-			    .setLngLat(pos)
+			    .setLngLat(e.latlng)
 			    .addTo(map);
-		}
-		
-		map.on('mouseclick', function(e) {
-			var features = map.queryRenderedFeatures(e.point);
-			console.log(features);
 		}
 
 	</script>
