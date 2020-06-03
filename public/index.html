@@ -50,6 +50,12 @@
 			    .setLngLat(pos)
 			    .addTo(map);
 		}
+		
+		map.on('mouseclick', function(e) {
+			var features = map.queryRenderedFeatures(e.point);
+			console.log(features);
+		}
+
 	</script>
     <!--
       This HTML file is a template.
