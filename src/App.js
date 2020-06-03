@@ -6,13 +6,14 @@ import './App.css';
 
 function App() {
 	return (
-	<div className="App">
-	<AppHeader />
-	<AppContainer />
-	<div id="map"></div>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB54eVXdlUoy9t9GkcgUQsm7RujVuz8XIo&callback=initMap"></script>
-	<script type="text/JavaScript" src="/map.js"></script>
-	</div>
+		<div className="App">
+			<AppHeader />
+			<AppContainer />
+			<div id="map"></div>
+			<script src="/map.js"></script>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB54eVXdlUoy9t9GkcgUQsm7RujVuz8XIo&callback=initMap"></script>
+			<script type="text/JavaScript" src="/map.js"></script>
+		</div>
 	);
 }
 
