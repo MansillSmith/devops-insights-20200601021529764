@@ -29,7 +29,6 @@ function AppContainer(props) {
                 <Zip onZipChange={handleZipChange} clearResponse={clearResponse}/>
                 <div className="col-sm-4"></div>
             </div>
-			<embed type="text/html" src="map.html" width="500" height="100%">
             <div className="row mt-4">
                 <div className="col-sm-2"></div>
                 <ZipResponse responseData={responseData} clearResponse={clearResponse}/>
