@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet' />
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -28,17 +30,14 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <div id="map"></div>
+    <div id='map' style='width: 400px; height: 300px;'></div>
 	<script>
-		function initMap(){
-			var options = {
-				zoom:8,
-				center:{lat:175.2700,lng:37.7800}
-			}
-			var map = new google.maps.Map(document.getElementById('map'),options);
-		}
+		mapboxgl.accessToken = 'pk.eyJ1IjoibWFuc2lsbHNtaXRod2Fpa2F0byIsImEiOiJja2F5dWo5cHkwZ2NzMnhwaTJmejQ4cGV0In0.mFF2Ye-BbHf63SpW5f8NOw';
+		var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v11'
+		});
 	</script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB54eVXdlUoy9t9GkcgUQsm7RujVuz8XIo&callback=initMap"></script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
