@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<title>Google Maps</title
-	<style>
-		#map{
-			height:400px;
-			width:100%;
-		}
-	</style>
-</head>
-<body>
-	<div id="map"></div>
-	<script>
-		function initMap(){
-			var options = {
-				zoom:8,
-				center:{lat:175.27,lng:37.78}
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Google Maps</title
+		<style>
+			#map{
+				height:400px;
+				width:100%;
 			}
-			var map = new google.maps.Map(document.getElementById('map'),options);
-		}
-	</script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB54eVXdlUoy9t9GkcgUQsm7RujVuz8XIo&callback=initMap"></script>
-</body
+		</style>
+	</head>
+	<body>
+		<div id="map"></div>
+		<script>
+			function initMap(){
+				var options = {
+					zoom:8,
+					center:{lat:175.27,lng:37.78}
+				}
+				var map = new google.maps.Map(document.getElementById('map'),options);
+			}
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB54eVXdlUoy9t9GkcgUQsm7RujVuz8XIo&callback=initMap"></script>
+	</body
+</html>
