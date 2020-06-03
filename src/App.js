@@ -10,10 +10,8 @@ function App() {
 	<AppHeader />
 	<AppContainer />
 	<div id="map"></div>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB54eVXdlUoy9t9GkcgUQsm7RujVuz8XIo&callback=initMap"></script>
 	<script src="/map.js"></script>
-	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB54eVXdlUoy9t9GkcgUQsm7RujVuz8XIo&callback=initMap">
-	</script>
 	</div>
 	);
 }
