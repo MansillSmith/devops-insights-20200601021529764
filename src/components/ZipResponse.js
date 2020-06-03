@@ -54,6 +54,7 @@ function ZipResponse(props) {
                 </div>
 				<script>
 					mapboxgl.accessToken = 'pk.eyJ1IjoibWFuc2lsbHNtaXRod2Fpa2F0byIsImEiOiJja2F5dWo5cHkwZ2NzMnhwaTJmejQ4cGV0In0.mFF2Ye-BbHf63SpW5f8NOw';
+					//var map = new mapboxgl.Map({container:'map',style:'mapbox://styles/mapbox/streets-v11'});
 					var map = new mapboxgl.Map({container:'map',style:'mapbox://styles/mapbox/streets-v11'});
 				</script>
             </div>
