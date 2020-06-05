@@ -58,7 +58,6 @@
 			    
 		    const Http = new XMLHttpRequest();
 		    const url = 'https://api.openweathermap.org/data/2.5/weather?appid=6b7b471967dd0851d0010cdecf28f829&units=metric&lat=' + e.lngLat.lat + '&lon=' + e.lngLat.lng;
-		    console.log(url);
 			Http.open("GET", url);
 			Http.send();
 				
@@ -66,9 +65,6 @@
 				window.localStorage.setItem('weather',Http.responseText);
 				document.getElementById('usr').value = JSON.parse(Http.responseText).name;
 			}
-			
-			console.log(Http);
-			console.log(url);
 		}
 
 	</script>
