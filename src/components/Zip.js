@@ -38,7 +38,7 @@ function Zip(props) {
                                 validate(event);
                             }
                         }}
-                        onchange={(event) => {
+                        onChange={(event) => {
                             validate(event);
                         }}
                     ></input>   
