@@ -64,12 +64,11 @@
 				
 			Http.onreadystatechange = (e) => {
 				window.localStorage.setItem('weather',Http.responseText);
+				document.getElementById('usr').value = JSON.parse(Http.responseText).name;
 			}
 			
 			console.log(Http);
 			console.log(url);
-			
-			document.getElementById('usr').value = JSON.parse(Http.responseText).name;
 		}
 
 	</script>
